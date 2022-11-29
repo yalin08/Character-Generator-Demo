@@ -30,7 +30,10 @@ public class CustomInspector2 : Editor
         {
             rcg.Randomize();
         }
-
+        if (GUILayout.Button("LoadBefore"))
+        {
+            rcg.LoadPrevious();
+        }
 
     }
 }

@@ -313,22 +313,22 @@ PrefabInstance:
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5618799201377476470, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+      objectReference: {fileID: 6642214114180939812, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.90224284
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.9137255
+      value: 0.9339623
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.63529414
+      value: 0.9255038
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -349,22 +349,22 @@ PrefabInstance:
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7324984507975950097, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
+      objectReference: {fileID: 7324984507975950097, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.050980393
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.34117648
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.3019608
+      value: 0.92941177
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -377,18 +377,18 @@ PrefabInstance:
     - target: {fileID: -7586865959642785860, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3850505037678806168, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+      objectReference: {fileID: 4928124674225174358, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
     - target: {fileID: -7586865959642785860, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0.050980393
+      value: 0.90224284
       objectReference: {fileID: 0}
     - target: {fileID: -7586865959642785860, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.34117648
+      value: 0.9339623
       objectReference: {fileID: 0}
     - target: {fileID: -7586865959642785860, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.92941177
+      value: 0.9255038
       objectReference: {fileID: 0}
     - target: {fileID: -7586865959642785860, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -457,22 +457,22 @@ PrefabInstance:
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4902051160747126218, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
+      objectReference: {fileID: 4928124674225174358, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.9137255
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.3019608
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -589,22 +589,22 @@ PrefabInstance:
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 657066279718645023, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+      objectReference: {fileID: 657066279718645023, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0.050980393
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.34117648
+      value: 0.9137255
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.92941177
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -689,22 +689,22 @@ PrefabInstance:
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 2862857041179494317, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+      objectReference: {fileID: 2862857041179494317, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.050980393
       objectReference: {fileID: 0}
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.34117648
       objectReference: {fileID: 0}
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.3019608
+      value: 0.92941177
       objectReference: {fileID: 0}
     - target: {fileID: 7214656882407254396, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -812,6 +812,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1165711360}
   - component: {fileID: 1165711361}
+  - component: {fileID: 1165711362}
+  - component: {fileID: 1165711363}
   m_Layer: 0
   m_Name: CharacterTest
   m_TagString: Untagged
@@ -853,30 +855,60 @@ MonoBehaviour:
   - thatLimbName: arm copy
     thatLimb: {fileID: 872522717}
     thatLimbSpriteRenderer: {fileID: 872522718}
-    element: 2
+    element: 0
   - thatLimbName: head
     thatLimb: {fileID: 872522715}
     thatLimbSpriteRenderer: {fileID: 872522716}
-    element: 1
+    element: 2
   - thatLimbName: body
     thatLimb: {fileID: 872522713}
     thatLimbSpriteRenderer: {fileID: 872522714}
-    element: 3
+    element: 1
   - thatLimbName: leg
     thatLimb: {fileID: 872522711}
     thatLimbSpriteRenderer: {fileID: 872522712}
-    element: 1
+    element: 0
   - thatLimbName: leg copy
     thatLimb: {fileID: 872522709}
     thatLimbSpriteRenderer: {fileID: 872522708}
-    element: 3
+    element: 2
   - thatLimbName: arm
     thatLimb: {fileID: 872522707}
     thatLimbSpriteRenderer: {fileID: 872522710}
-    element: 3
-  charName: Lucky Patricia
-  personality: face2
+    element: 1
+  charName: 
+  personality: 
+  elements: 000000000000000000000000000000000000000000000000
+  limbInt: 000000000000000000000000000000000000000000000000
   face: {fileID: 1552245009}
+--- !u!114 &1165711362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165711359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e2f0d52652ccd48a433b3c70796690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats:
+    str: 3
+    agi: 3
+    intl: 3
+--- !u!114 &1165711363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165711359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55938fb1577dd4ad3af7e994048c86f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1376557093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,7 +1034,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1962798989}
   - component: {fileID: 1962798993}
+  - component: {fileID: 1962798994}
   - component: {fileID: 1962798988}
+  - component: {fileID: 1962798995}
   - component: {fileID: 1962798992}
   - component: {fileID: 1962798991}
   - component: {fileID: 1962798990}
@@ -1025,7 +1059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee988d07c549894449c7e5982998bccc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dontDestroyOnLoad: 0
+  _dontDestroyOnLoad: 1
   SpritePathLocation: Assets/Sprites/Body
   faceSpritePathLocation: Assets/Sprites/Face
   faces:
@@ -1110,233 +1144,233 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nameData:
     nameArray:
-    - Adorable
-    - Adventurous
-    - Aggressive
-    - Agreeable
-    - Alert
-    - Alive
-    - Amused
-    - Angry
-    - Annoyed
-    - Annoying
-    - Anxious
-    - Arrogant
-    - Ashamed
-    - Attractive
-    - Average
-    - Awful
-    - Bad
-    - Beautiful
-    - Better
-    - Bewildered
-    - Black
-    - Bloody
-    - Blue
-    - Blue-eyed
-    - Blushing
-    - Bored
-    - Brainy
-    - Brave
-    - Breakable
-    - Bright
-    - Busy
-    - Calm
-    - Careful
-    - Cautious
-    - Charming
-    - Cheerful
-    - Clean
-    - Clear
-    - Clever
-    - Cloudy
-    - Clumsy
-    - Colorful
-    - Combative
-    - Comfortable
-    - Concerned
-    - Condemned
-    - Confused
-    - Cooperative
-    - Courageous
-    - Crazy
-    - Creepy
-    - Crowded
-    - Cruel
-    - Curious
-    - Cute
-    - Dangerous
-    - Dark
-    - Dead
-    - Defeated
-    - Defiant
-    - Delightful
-    - Depressed
-    - Determined
-    - Different
-    - Difficult
-    - Disgusted
-    - Distinct
-    - Disturbed
-    - Dizzy
-    - Doubtful
-    - Drab
-    - Dulleager
-    - Easy
-    - Elated
-    - Elegant
-    - Embarrassed
-    - Enchanting
-    - Encouraging
-    - Energetic
-    - Enthusiastic
-    - Envious
-    - Evil
-    - Excited
-    - Expensive
-    - Exuberant
-    - Fair
-    - Faithful
-    - Famous
-    - Fancy
-    - Fantastic
-    - Fierce
-    - Filthy
-    - Fine
-    - Foolish
-    - Fragile
-    - Frail
-    - Frantic
-    - Friendly
-    - Frightened
-    - Funny
-    - Gentle
-    - Gifted
-    - Glamorous
-    - Gleaming
-    - Glorious
-    - Good
-    - Gorgeous
-    - Graceful
-    - Grieving
-    - Grotesque
-    - Grumpy
-    - Handsome
-    - Happy
-    - Healthy
-    - Helpful
-    - Helpless
-    - Hilarious
-    - Homeless
-    - Homely
-    - Horrible
-    - Hungry
-    - Hurt
-    - Ill
-    - Important
-    - Impossible
-    - Inexpensive
-    - Innocent
-    - Inquisitive
-    - Itchy
-    - Jealous
-    - Jittery
-    - Jolly
-    - Joyous
-    - Kind
-    - Lazy
-    - Light
-    - Lively
-    - Lonely
-    - Long
-    - Lovely
-    - Lucky
-    - Magnificent
-    - Misty
-    - Modern
-    - Motionless
-    - Muddy
-    - Mushy
-    - Mysterious
-    - Nasty
-    - Naughty
-    - Nervous
-    - Nice
-    - Nutty
-    - Obedient
-    - Obnoxious
-    - Odd
-    - Old-fashioned
-    - Open
-    - Outrageous
-    - Outstanding
-    - Panicky
-    - Perfect
-    - Plain
-    - Pleasant
-    - Poised
-    - Poor
-    - Powerful
-    - Precious
-    - Prickly
-    - Proud
-    - Putrid
-    - Puzzled
-    - Quaint
-    - Real
-    - Relieved
-    - Repulsive
-    - Rich
-    - Scary
-    - Selfish
-    - Shiny
-    - Shy
-    - Silly
-    - Sleepy
-    - Smiling
-    - Smoggy
-    - Sore
-    - Sparkling
-    - Splendid
-    - Spotless
-    - Stormy
-    - Strange
-    - Stupid
-    - Successful
-    - Super
-    - Talented
-    - Tame
-    - Tasty
-    - Tender
-    - Tense
-    - Terrible
-    - Thankful
-    - Thoughtful
-    - Thoughtless
-    - Tired
-    - Tough
-    - Troubled
-    - Ugliest
-    - Ugly
-    - Uninterested
-    - Unsightly
-    - Unusual
-    - Upset
-    - Uptight
-    - Vast
-    - Victorious
-    - Vivacious
-    - Wandering
-    - Weary
-    - Wicked
-    - Wide-eyed
-    - Wild
-    - Witty
-    - Worried
-    - Worrisome
-    - Wrong
-    - Zany
-    - Zealous
+    - adorable
+    - adventurous
+    - aggressive
+    - agreeable
+    - alert
+    - alive
+    - amused
+    - angry
+    - annoyed
+    - annoying
+    - anxious
+    - arrogant
+    - ashamed
+    - attractive
+    - average
+    - awful
+    - bad
+    - beautiful
+    - better
+    - bewildered
+    - black
+    - bloody
+    - blue
+    - blue-eyed
+    - blushing
+    - bored
+    - brainy
+    - brave
+    - breakable
+    - bright
+    - busy
+    - calm
+    - careful
+    - cautious
+    - charming
+    - cheerful
+    - clean
+    - clear
+    - clever
+    - cloudy
+    - clumsy
+    - colorful
+    - combative
+    - comfortable
+    - concerned
+    - condemned
+    - confused
+    - cooperative
+    - courageous
+    - crazy
+    - creepy
+    - crowded
+    - cruel
+    - curious
+    - cute
+    - dangerous
+    - dark
+    - dead
+    - defeated
+    - defiant
+    - delightful
+    - depressed
+    - determined
+    - different
+    - difficult
+    - disgusted
+    - distinct
+    - disturbed
+    - dizzy
+    - doubtful
+    - drab
+    - dulleager
+    - easy
+    - elated
+    - elegant
+    - embarrassed
+    - enchanting
+    - encouraging
+    - energetic
+    - enthusiastic
+    - envious
+    - evil
+    - excited
+    - expensive
+    - exuberant
+    - fair
+    - faithful
+    - famous
+    - fancy
+    - fantastic
+    - fierce
+    - filthy
+    - fine
+    - foolish
+    - fragile
+    - frail
+    - frantic
+    - friendly
+    - frightened
+    - funny
+    - gentle
+    - gifted
+    - glamorous
+    - gleaming
+    - glorious
+    - good
+    - gorgeous
+    - graceful
+    - grieving
+    - grotesque
+    - grumpy
+    - handsome
+    - happy
+    - healthy
+    - helpful
+    - helpless
+    - hilarious
+    - homeless
+    - homely
+    - horrible
+    - hungry
+    - hurt
+    - ill
+    - important
+    - impossible
+    - inexpensive
+    - innocent
+    - inquisitive
+    - itchy
+    - jealous
+    - jittery
+    - jolly
+    - joyous
+    - kind
+    - lazy
+    - light
+    - lively
+    - lonely
+    - long
+    - lovely
+    - lucky
+    - magnificent
+    - misty
+    - modern
+    - motionless
+    - muddy
+    - mushy
+    - mysterious
+    - nasty
+    - naughty
+    - nervous
+    - nice
+    - nutty
+    - obedient
+    - obnoxious
+    - odd
+    - old-fashioned
+    - open
+    - outrageous
+    - outstanding
+    - panicky
+    - perfect
+    - plain
+    - pleasant
+    - poised
+    - poor
+    - powerful
+    - precious
+    - prickly
+    - proud
+    - putrid
+    - puzzled
+    - quaint
+    - real
+    - relieved
+    - repulsive
+    - rich
+    - scary
+    - selfish
+    - shiny
+    - shy
+    - silly
+    - sleepy
+    - smiling
+    - smoggy
+    - sore
+    - sparkling
+    - splendid
+    - spotless
+    - stormy
+    - strange
+    - stupid
+    - successful
+    - super
+    - talented
+    - tame
+    - tasty
+    - tender
+    - tense
+    - terrible
+    - thankful
+    - thoughtful
+    - thoughtless
+    - tired
+    - tough
+    - troubled
+    - ugliest
+    - ugly
+    - uninterested
+    - unsightly
+    - unusual
+    - upset
+    - uptight
+    - vast
+    - victorious
+    - vivacious
+    - wandering
+    - weary
+    - wicked
+    - wide-eyed
+    - wild
+    - witty
+    - worried
+    - worrisome
+    - wrong
+    - zany
+    - zealous
   namesFile: Adjectives.json
   path: Assets/Json/
 --- !u!114 &1962798992
@@ -1771,9 +1805,96 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec2ce6e9b9d5dd41bccbe22ba0cfb55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Lucky Patricia
+  Name: Uptight Charles
   names: {fileID: 1962798992}
   adjectives: {fileID: 1962798991}
+--- !u!114 &1962798994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962798987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9ba31bdbb06a0438dc8bf76fd28f77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats:
+  - name: guy1
+    limbStats:
+    - str: 1
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 2
+      intl: 0
+    - str: 0
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 0
+      intl: 1
+    - str: 2
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 1
+      intl: 0
+  - name: guy2
+    limbStats:
+    - str: 2
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 1
+      intl: 0
+    - str: 0
+      agi: 0
+      intl: 2
+    - str: 0
+      agi: 1
+      intl: 0
+    - str: 0
+      agi: 1
+      intl: 0
+    - str: 2
+      agi: 0
+      intl: 0
+  - name: guy3
+    limbStats:
+    - str: 1
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 2
+      intl: 0
+    - str: 1
+      agi: 0
+      intl: 0
+    - str: 0
+      agi: 0
+      intl: 2
+    - str: 0
+      agi: 3
+      intl: 0
+    - str: 0
+      agi: 0
+      intl: 1
+--- !u!114 &1962798995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962798987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 300dd209af7ad9448b6fe50a93d82d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dontDestroyOnLoad: 1
+  PreviousCharactersList: []
 --- !u!1 &2122535018
 GameObject:
   m_ObjectHideFlags: 0
