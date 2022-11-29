@@ -36,6 +36,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
     public string SpritePathLocation;
     public string faceSpritePathLocation;
     public List<CharacterFaces> faces;
+    
 
     List<GameObject> CharacterSpriteObject = new List<GameObject>();
     List<Sprite> faceSprites = new List<Sprite>();
@@ -59,7 +60,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
 
 
-
+      
 
         CharacterSpriteObject.Clear();
         faceSprites.Clear();
@@ -132,6 +133,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
             faces[i].Face = faceSprites[i];
             faces[i].Personality = faceSprites[i].name;
         }
-
+        StatGiver sg = GetComponent<StatGiver>();
+        sg.EqualizeNumbers();
     }
 }

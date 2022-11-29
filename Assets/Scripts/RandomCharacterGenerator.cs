@@ -17,10 +17,7 @@ public enum Element
 {
     none, Fire, Grass, Water
 }
-public enum Personality
-{
-    some, thing, cursed
-}
+
 
 public class RandomCharacterGenerator : MonoBehaviour
 {
@@ -30,6 +27,8 @@ public class RandomCharacterGenerator : MonoBehaviour
     public string charName;
     public string personality;
     public SpriteRenderer face;
+    CharacterStats cs;
+    StatGiver sg;
 
     private void OnValidate()
     {
@@ -47,14 +46,16 @@ public class RandomCharacterGenerator : MonoBehaviour
             }
 
         }
-
-
+        sg = CharacterSpriteFinder.gameObject.GetComponent<StatGiver>();
+        cs = GetComponent<CharacterStats>();
     }
 
     public void Randomize()
     {
 
         charName = CharacterSpriteFinder.gameObject.GetComponent<NameGenerator>().generateRandomName();
+    
+        cs.ResetStats();
         for (int i = 0; i < characterParts.Length; i++)
         {
 
@@ -68,12 +69,16 @@ public class RandomCharacterGenerator : MonoBehaviour
 
             characterParts[i].thatLimbSpriteRenderer.color = ElementColor((Element)k);
 
-         
+
             int l = Random.Range(0, CharacterSpriteFinder.faces.Count);
 
             personality = CharacterSpriteFinder.faces[l].Personality;
             face.sprite = CharacterSpriteFinder.faces[l].Face;
 
+            
+            cs.stats.str += sg.stats[j].limbStats[i].str;
+            cs.stats.agi += sg.stats[j].limbStats[i].agi;
+            cs.stats.intl += sg.stats[j].limbStats[i].intl;
         }
 
 
@@ -91,7 +96,7 @@ public class RandomCharacterGenerator : MonoBehaviour
 
         foreach (Colors cl in CharacterSpriteFinder.colors)
         {
-            if (""+cl.colorName == "" + element)
+            if ("" + cl.colorName == "" + element)
             {
                 return cl.color;
             }
@@ -105,9 +110,6 @@ public class RandomCharacterGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-            Randomize();
-        }
+
     }
 }

@@ -313,22 +313,22 @@ PrefabInstance:
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6642214114180939812, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+      objectReference: {fileID: 5618799201377476470, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0.90224284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.9339623
+      value: 0.9137255
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.9255038
+      value: 0.63529414
       objectReference: {fileID: 0}
     - target: {fileID: -8827561964870744558, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -349,22 +349,22 @@ PrefabInstance:
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7324984507975950097, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+      objectReference: {fileID: 7324984507975950097, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.9137255
+      value: 0.53333336
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.63529414
+      value: 0.3019608
       objectReference: {fileID: 0}
     - target: {fileID: -8250169266279454816, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -457,22 +457,22 @@ PrefabInstance:
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4928124674225174358, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+      objectReference: {fileID: -4902051160747126218, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.9137255
+      value: 0.53333336
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.63529414
+      value: 0.3019608
       objectReference: {fileID: 0}
     - target: {fileID: -4798729988130131166, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -589,22 +589,22 @@ PrefabInstance:
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 657066279718645023, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
+      objectReference: {fileID: 657066279718645023, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.050980393
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.g
-      value: 0.53333336
+      value: 0.34117648
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_Color.r
-      value: 0.3019608
+      value: 0.92941177
       objectReference: {fileID: 0}
     - target: {fileID: 1609719090194301641, guid: ffa29e71ddc3d2d4d8f964686e2e643d, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -853,15 +853,15 @@ MonoBehaviour:
   - thatLimbName: arm copy
     thatLimb: {fileID: 872522717}
     thatLimbSpriteRenderer: {fileID: 872522718}
-    element: 0
+    element: 2
   - thatLimbName: head
     thatLimb: {fileID: 872522715}
     thatLimbSpriteRenderer: {fileID: 872522716}
-    element: 3
+    element: 1
   - thatLimbName: body
     thatLimb: {fileID: 872522713}
     thatLimbSpriteRenderer: {fileID: 872522714}
-    element: 2
+    element: 3
   - thatLimbName: leg
     thatLimb: {fileID: 872522711}
     thatLimbSpriteRenderer: {fileID: 872522712}
@@ -869,13 +869,13 @@ MonoBehaviour:
   - thatLimbName: leg copy
     thatLimb: {fileID: 872522709}
     thatLimbSpriteRenderer: {fileID: 872522708}
-    element: 2
+    element: 3
   - thatLimbName: arm
     thatLimb: {fileID: 872522707}
     thatLimbSpriteRenderer: {fileID: 872522710}
     element: 3
-  charName: Maria the Graceful
-  personality: face1
+  charName: Lucky Patricia
+  personality: face2
   face: {fileID: 1552245009}
 --- !u!1 &1376557093
 GameObject:
@@ -966,7 +966,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: dd28ddc170cfb0a4ea5d8b3f3d202aa5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bf8bb18173e08d459d00e61d8c51680, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1003,9 +1003,9 @@ GameObject:
   - component: {fileID: 1962798989}
   - component: {fileID: 1962798993}
   - component: {fileID: 1962798988}
-  - component: {fileID: 1962798990}
   - component: {fileID: 1962798992}
   - component: {fileID: 1962798991}
+  - component: {fileID: 1962798990}
   m_Layer: 0
   m_Name: Database
   m_TagString: LimbDB
@@ -1338,7 +1338,7 @@ MonoBehaviour:
     - Zany
     - Zealous
   namesFile: Adjectives.json
-  path: Assets/
+  path: Assets/Json/
 --- !u!114 &1962798992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,7 +1758,7 @@ MonoBehaviour:
     - Violet
     - Yvonne
   namesFile: Names.json
-  path: Assets/
+  path: Assets/Json/
 --- !u!114 &1962798993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ec2ce6e9b9d5dd41bccbe22ba0cfb55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Maria the Graceful
+  Name: Lucky Patricia
   names: {fileID: 1962798992}
   adjectives: {fileID: 1962798991}
 --- !u!1 &2122535018

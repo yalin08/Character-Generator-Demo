@@ -12,22 +12,11 @@ public class NameGenerator :MonoBehaviour
     string[] namesList;
     string[] adjectivesList;
 
-    private void OnValidate()
-    {
-        namesList = names._nameData.nameArray;
-        adjectivesList = adjectives._nameData.nameArray;
-
-
-
-
-        for (int i = 0; i < adjectivesList.Length; i++)
-        {
-            adjectivesList[i] = (char.ToUpper(adjectivesList[i][0]) + adjectivesList[i].Substring(1));
-        }
-    }
+   
 
     public string generateRandomName()
     {
+        GetNames();
         int i = Random.Range(0, namesList.Length);
         int j = Random.Range(0, adjectivesList.Length);
         int k = Random.Range(0, 2);
@@ -42,5 +31,17 @@ public class NameGenerator :MonoBehaviour
         }
         return Name;
     }
+    void GetNames()
+    {
+        namesList = names._nameData.nameArray;
+        adjectivesList = adjectives._nameData.nameArray;
 
+
+
+
+        for (int i = 0; i < adjectivesList.Length; i++)
+        {
+            adjectivesList[i] = (char.ToUpper(adjectivesList[i][0]) + adjectivesList[i].Substring(1));
+        }
+    }
 }
