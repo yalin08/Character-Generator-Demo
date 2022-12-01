@@ -20,7 +20,7 @@ public class Characters
 {
     public string Name;
     public List<Sprite> limbSprite;
-   
+
 }
 
 [System.Serializable]
@@ -35,10 +35,12 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
     public string SpritePathLocation;
     public string faceSpritePathLocation;
+    public string statsFolder;
     public List<CharacterFaces> faces;
-    
+
 
     List<GameObject> CharacterSpriteObject = new List<GameObject>();
+  [HideInInspector]public  List<CharacterLimbStats> statsObjects = new List<CharacterLimbStats>();
     List<Sprite> faceSprites = new List<Sprite>();
     List<Sprite> sprites = new List<Sprite>();
     List<SpriteRenderer> spriterenderers = new List<SpriteRenderer>();
@@ -60,17 +62,36 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
 
 
-      
+
 
         CharacterSpriteObject.Clear();
         faceSprites.Clear();
+        //  statsObjects.Clear();
         foreach (string file in System.IO.Directory.GetFiles(SpritePathLocation))
         {
 
-            string pathFile = file.Substring(file.Length - 4);
 
+            string pathFile = file.Substring(file.Length - 4);
             if (pathFile == ".psb")
+            {
                 CharacterSpriteObject.Add((GameObject)AssetDatabase.LoadAssetAtPath(file, typeof(GameObject)));
+
+                string s = file.Substring(SpritePathLocation.Length);
+                s = s.Remove(s.Length - 4);
+                Debug.Log(s);
+
+
+                //  string name = UnityEditor.AssetDatabase.GenerateUniqueAssetPath;
+                if (!File.Exists(statsFolder + s + ".asset"))
+                {
+                    CharacterLimbStats asset = ScriptableObject.CreateInstance<CharacterLimbStats>();
+                    statsObjects.Add(asset);
+                    AssetDatabase.CreateAsset(asset, (statsFolder + s + ".asset"));
+
+                    AssetDatabase.SaveAssets();
+                }
+
+            }
 
 
         }
@@ -86,7 +107,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
 
 
-            LimbSorter();
+        LimbSorter();
 
 
 
@@ -115,9 +136,14 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
             List<Sprite> sprite = new List<Sprite>();
             sr = CharacterSpriteObject[i].GetComponentsInChildren<SpriteRenderer>();
 
-            foreach (SpriteRenderer srr in sr)
+            for (int j = 0; j < sr.Length; j++)
             {
-                sprite.Add(srr.sprite);
+
+                sprite.Add(sr[j].sprite);
+
+                statsObjects[i].LimbStats[j].LimbName = sr[j].sprite.name;
+
+
             }
             CharactersList[i].limbSprite = sprite;
             //  CharactersList[i].sr = sr;

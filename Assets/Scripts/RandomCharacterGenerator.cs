@@ -26,9 +26,7 @@ public class RandomCharacterGenerator : MonoBehaviour
     public CharacterParts[] characterParts;
     public string charName;
     public string personality;
-    int personalityInt;
-    public Element[] elements = new Element[6];
-    public int[] limbInt = new int[6];
+
 
     public SpriteRenderer face;
     CharacterStats cs;
@@ -44,6 +42,7 @@ public class RandomCharacterGenerator : MonoBehaviour
 
                 if (child.name == characterParts[i].thatLimbName)
                 {
+                    Debug.Log("aaaa");
                     characterParts[i].thatLimb = child.gameObject;
                     characterParts[i].thatLimbSpriteRenderer = child.GetComponent<SpriteRenderer>();
                 }
@@ -59,51 +58,64 @@ public class RandomCharacterGenerator : MonoBehaviour
     void SavePrevious()
     {
         PreviousCharacters.Instance.PreviousCharactersList.Add(new PreviousCharactersList());
-        var thatList = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
-        thatList.name = new string("" + charName);
+        PreviousCharactersList toBeSaved = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
+        PreviousCharactersList currentChar = PreviousCharacters.Instance.CurrentCharacter;
+        toBeSaved.name = new string("" + charName);
 
-        for (int i = 0; i < elements.Length; i++)
+        for (int i = 0; i < currentChar.limbElement.Length; i++)
         {
-           
-            thatList.limbElement[i] = elements[i];
+
+            toBeSaved.limbElement[i] = currentChar.limbElement[i];
 
         }
-        for (int i = 0; i < limbInt.Length; i++)
+        for (int i = 0; i < currentChar.limbInt.Length; i++)
         {
-          //  new int()  = limbInt[i];
-            thatList.limbInt[i] = limbInt[i];
-           
+            //  new int()  = limbInt[i];
+            toBeSaved.limbInt[i] = currentChar.limbInt[i];
+
 
         }
 
-        
-        thatList.Stats = cs.stats;
-        int prsn = new int();
-        prsn = personalityInt;
-        thatList.personality = prsn;
+        //PreviousCharacters.Instance.setStats(1, toBeSaved.stats);
+        Stats tempList = new Stats();
+        tempList.agi = cs.stats.agi;
+        tempList.str = cs.stats.str;
+        tempList.intl = cs.stats.intl;
+        toBeSaved.stats = tempList;
+
+        //    toBeSaved.stats = currentChar.stats;
+        //  toBeSaved.Stats.intl = cs.stats.intl;
+
+
+        toBeSaved.personality = currentChar.personality;
 
 
     }
 
     public void LoadPrevious()
     {
-        var thatList = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
+        PreviousCharactersList previousCharacter = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
+        PreviousCharactersList currentChar = PreviousCharacters.Instance.CurrentCharacter;
+        charName = previousCharacter.name;
+        currentChar.personality = previousCharacter.personality;
 
-        charName = thatList.name;
-        personalityInt = thatList.personality;
-
-        for (int i = 0; i < elements.Length; i++)
+        for (int i = 0; i < currentChar.limbElement.Length; i++)
         {
-            elements[i] = thatList.limbElement[i];
-            characterParts[i].thatLimbSpriteRenderer.color = ElementColor(elements[i]);
+            currentChar.limbElement[i] = previousCharacter.limbElement[i];
+            characterParts[i].thatLimbSpriteRenderer.color = ElementColor(currentChar.limbElement[i]);
         }
-        personality = CharacterSpriteFinder.faces[personalityInt].Personality;
+        personality = CharacterSpriteFinder.faces[currentChar.personality].Personality;
+        face.sprite = CharacterSpriteFinder.faces[currentChar.personality].Face;
 
-        cs.stats= thatList.Stats ;
+        // PreviousCharacters.Instance.setStats(0, previousCharacter.stats);
+        cs.stats = previousCharacter.stats;
+
+      
+
 
         for (int i = 0; i < characterParts.Length; i++)
         {
-            characterParts[i].thatLimbSpriteRenderer.sprite = CharacterSpriteFinder.CharactersList[thatList.limbInt[i]].limbSprite[i];
+            characterParts[i].thatLimbSpriteRenderer.sprite = CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
         }
     }
 
@@ -113,6 +125,7 @@ public class RandomCharacterGenerator : MonoBehaviour
         SavePrevious();
 
         charName = CharacterSpriteFinder.gameObject.GetComponent<NameGenerator>().generateRandomName();
+        PreviousCharactersList currentCharacter = PreviousCharacters.Instance.CurrentCharacter;
 
         cs.ResetStats();
         for (int i = 0; i < characterParts.Length; i++)
@@ -121,18 +134,18 @@ public class RandomCharacterGenerator : MonoBehaviour
 
             int j = Random.Range(0, CharacterSpriteFinder.CharactersList.Count);
             characterParts[i].thatLimbSpriteRenderer.sprite = CharacterSpriteFinder.CharactersList[j].limbSprite[i];
-            limbInt[i] = j;
+            currentCharacter.limbInt[i] = j;
             int elementcount = (System.Enum.GetValues(typeof(Element)).Length);
 
             int k = Random.Range(0, elementcount);
 
             characterParts[i].element = (Element)k;
-            elements[i] = characterParts[i].element;
+            currentCharacter.limbElement[i] = characterParts[i].element;
             characterParts[i].thatLimbSpriteRenderer.color = ElementColor((Element)k);
 
 
             int l = Random.Range(0, CharacterSpriteFinder.faces.Count);
-            personalityInt = l;
+            currentCharacter.personality = l;
             personality = CharacterSpriteFinder.faces[l].Personality;
             face.sprite = CharacterSpriteFinder.faces[l].Face;
 
@@ -141,7 +154,6 @@ public class RandomCharacterGenerator : MonoBehaviour
             cs.stats.agi += sg.stats[j].limbStats[i].agi;
             cs.stats.intl += sg.stats[j].limbStats[i].intl;
         }
-
 
 
         // nameGenerator.generateRandomName();

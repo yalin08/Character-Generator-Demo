@@ -991,7 +991,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 27
       y: 67
       width: 15
       height: 25
@@ -1189,7 +1189,7 @@ ScriptedImporter:
     - {x: 14, y: 15}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -51, y: 67}
+    uvTransform: {x: -28, y: 67}
   - name: leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1197,7 +1197,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 27
+      x: 4
       y: 67
       width: 15
       height: 25
@@ -1395,7 +1395,7 @@ ScriptedImporter:
     - {x: 14, y: 15}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -8, y: 67}
+    uvTransform: {x: -31, y: 67}
   - name: arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1882,22 +1882,22 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: leg copy
-    spriteName: leg copy
-    isGroup: 0
-    parentIndex: 0
-    spriteID: 40fc177583231594fb01f42a65d20e2c
-    layerID: 21
-    mosaicPosition: {x: 4, y: 67}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: leg
     spriteName: leg
     isGroup: 0
     parentIndex: 0
     spriteID: 0c06b192f341d3642bda3441acc10454
     layerID: 13
+    mosaicPosition: {x: 4, y: 67}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: leg copy
+    spriteName: leg copy
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 40fc177583231594fb01f42a65d20e2c
+    layerID: 21
     mosaicPosition: {x: 27, y: 67}
     flatten: 0
     isImported: 1

@@ -7,7 +7,7 @@ using UnityEngine;
 public class CharactersStats
 {
     public string name;
-    public Stats[] limbStats;
+    public Stats[] limbStats=new Stats[6];
 }
 [System.Serializable]
 public class Stats
@@ -30,18 +30,20 @@ public class StatGiver : MonoBehaviour
     }
 
     public void EqualizeNumbers()
-    {
-        int difference = csf.CharactersList.Count - stats.Count;
-        if (difference > 0)
+    {stats.Clear();
+
+        for (int i = 0; i < csf.statsObjects.Count; i++)
         {
-            for (int i = 0; i < difference; i++)
+            stats.Add(new CharactersStats());
+            stats[i].name = csf.statsObjects[i].name;
+
+            for (int j = 0; j < csf.statsObjects[i].LimbStats.Length; j++)
             {
-                stats.Add(new CharactersStats());
-                stats[i].limbStats = defaultLimbs;
                 
+                stats[i].limbStats[j] = csf.statsObjects[i].LimbStats[j].stats;
             }
         }
-           
+
 
         for (int j = 0; j < csf.CharactersList.Count; j++)
         {
