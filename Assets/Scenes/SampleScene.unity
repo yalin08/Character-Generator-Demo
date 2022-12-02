@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 1962798994}
   - component: {fileID: 1962798988}
   - component: {fileID: 1962798995}
+  - component: {fileID: 1962798996}
   - component: {fileID: 1962798992}
   - component: {fileID: 1962798991}
   - component: {fileID: 1962798990}
@@ -1414,6 +1415,29 @@ MonoBehaviour:
     personality: 0
     limbElement: 000000000000000000000000000000000000000000000000
     limbInt: 000000000000000000000000000000000000000000000000
+--- !u!114 &1962798996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962798987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812b8824c48e6c8459b1011fe6735dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveData:
+    previousCharacters: []
+    newestCharacter:
+      name: 
+      stats:
+        str: 0
+        agi: 0
+        intl: 0
+      personality: 0
+      limbElement: 000000000000000000000000000000000000000000000000
+      limbInt: 000000000000000000000000000000000000000000000000
 --- !u!1 &2122535018
 GameObject:
   m_ObjectHideFlags: 0

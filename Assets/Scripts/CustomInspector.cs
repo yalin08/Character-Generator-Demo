@@ -37,3 +37,22 @@ public class CustomInspector2 : Editor
 
     }
 }
+[CustomEditor(typeof(JsonSave))]
+public class CustomEditorJson : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+        JsonSave save = (JsonSave)target;
+        //EditorGUILayout.LabelField("");
+        if (GUILayout.Button("Save"))
+        {
+            save.SaveData();
+        }
+        if (GUILayout.Button("Load"))
+        {
+            save.LoadData();
+        }
+
+    }
+}

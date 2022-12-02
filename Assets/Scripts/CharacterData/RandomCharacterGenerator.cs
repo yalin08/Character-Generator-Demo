@@ -123,10 +123,10 @@ public class RandomCharacterGenerator : MonoBehaviour
     {
 
         SavePrevious();
-
-        charName = CharacterSpriteFinder.gameObject.GetComponent<NameGenerator>().generateRandomName();
         PreviousCharactersList currentCharacter = PreviousCharacters.Instance.CurrentCharacter;
 
+        charName = CharacterSpriteFinder.gameObject.GetComponent<NameGenerator>().generateRandomName();
+        currentCharacter.name = charName;
         cs.ResetStats();
         for (int i = 0; i < characterParts.Length; i++)
         {
@@ -155,7 +155,7 @@ public class RandomCharacterGenerator : MonoBehaviour
             cs.stats.intl += sg.stats[j].limbStats[i].intl;
         }
 
-
+        currentCharacter.stats = cs.stats;
         // nameGenerator.generateRandomName();
 
     }
