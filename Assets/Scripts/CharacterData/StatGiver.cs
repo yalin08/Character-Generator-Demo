@@ -24,35 +24,7 @@ public class StatGiver : MonoBehaviour
     CharacterSpriteFinder csf;
     public List<CharactersStats> stats;
     Stats[] defaultLimbs = new Stats[6];
-    private void OnValidate()
-    {
-        csf = GetComponent<CharacterSpriteFinder>();
-    }
+ 
 
-    public void EqualizeNumbers()
-    {stats.Clear();
-
-        for (int i = 0; i < csf.statsObjects.Count; i++)
-        {
-            stats.Add(new CharactersStats());
-            stats[i].name = csf.statsObjects[i].name;
-
-            for (int j = 0; j < csf.statsObjects[i].LimbStats.Length; j++)
-            {
-                
-                stats[i].limbStats[j] = csf.statsObjects[i].LimbStats[j].stats;
-            }
-        }
-
-
-        for (int j = 0; j < csf.CharactersList.Count; j++)
-        {
-
-
-            stats[j].name = csf.CharactersList[j].Name;
-
-
-
-        }
-    }
+   
 }

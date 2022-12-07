@@ -10,36 +10,36 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d06500f226cc254199bc20e606369d6, type: 3}
-  m_Name: guy3
+  m_Name: COM_guy1
   m_EditorClassIdentifier: 
   LimbStats:
   - LimbName: arm copy
     stats:
-      str: 1
+      str: 2
       agi: 1
-      intl: 2
+      intl: 1
   - LimbName: head
     stats:
       str: 1
       agi: 1
-      intl: 2
+      intl: 1
   - LimbName: body
     stats:
-      str: 2
+      str: 1
       agi: 1
-      intl: 1
+      intl: 2
   - LimbName: leg
     stats:
       str: 1
-      agi: 2
+      agi: 1
       intl: 1
   - LimbName: leg copy
     stats:
       str: 1
-      agi: 2
+      agi: 1
       intl: 1
   - LimbName: arm
     stats:
-      str: 1
+      str: 2
       agi: 1
-      intl: 2
+      intl: 1

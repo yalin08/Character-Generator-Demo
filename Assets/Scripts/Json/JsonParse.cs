@@ -13,13 +13,14 @@ public class JsonParse : MonoBehaviour
     public string namesFile = "Names.json";
     public string path;
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
           GetNameData();
 
      
     }
-
+#endif
 
     [Serializable]
     public class NameData

@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 [CustomEditor(typeof(CharacterSpriteFinder))]
 public class CustomInspector1 : Editor
 {
@@ -17,10 +18,12 @@ public class CustomInspector1 : Editor
 
 
     }
+
 }
 [CustomEditor(typeof(RandomCharacterGenerator))]
 public class CustomInspector2 : Editor
 {
+
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
@@ -36,10 +39,12 @@ public class CustomInspector2 : Editor
         }
 
     }
+
 }
 [CustomEditor(typeof(JsonSave))]
 public class CustomEditorJson : Editor
 {
+
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
@@ -55,4 +60,6 @@ public class CustomEditorJson : Editor
         }
 
     }
+
 }
+#endif

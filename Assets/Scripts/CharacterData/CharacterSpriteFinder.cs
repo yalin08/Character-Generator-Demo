@@ -40,7 +40,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
 
     List<GameObject> CharacterSpriteObject = new List<GameObject>();
-  [HideInInspector]public  List<CharacterLimbStats> statsObjects = new List<CharacterLimbStats>();
+    ScriptableObjectHolder scriptableObjects;
     List<Sprite> faceSprites = new List<Sprite>();
     List<Sprite> sprites = new List<Sprite>();
     List<SpriteRenderer> spriterenderers = new List<SpriteRenderer>();
@@ -48,14 +48,37 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
     public List<Characters> CharactersList = new List<Characters>();
     public Colors[] colors;
 
-    NameGenerator nameGenerator;
+
     void OnValidate()
     {
 
-        nameGenerator = GetComponent<NameGenerator>();
 
+        scriptableObjects = transform.parent.GetComponentInChildren<ScriptableObjectHolder>();
     }
+#if UNITY_EDITOR
+    void UpdateRarity(CharacterLimbStats limbStats, string rarityString)
+    {
+        if (rarityString == "COM_")
+        {
+            limbStats.rarity = RarityEnum.Common;
 
+        }
+        if (rarityString == "UNC_")
+        {
+            limbStats.rarity = RarityEnum.Uncommon;
+
+        }
+        if (rarityString == "RAR_")
+        {
+            limbStats.rarity = RarityEnum.Rare;
+
+        }
+        if (rarityString == "LEG_")
+        {
+            limbStats.rarity = RarityEnum.Legendary;
+
+        }
+    }
 
     public void FindLimbsFromPSBFiles()
     {
@@ -67,6 +90,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
         CharacterSpriteObject.Clear();
         faceSprites.Clear();
         //  statsObjects.Clear();
+
         foreach (string file in System.IO.Directory.GetFiles(SpritePathLocation))
         {
 
@@ -75,24 +99,46 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
             if (pathFile == ".psb")
             {
                 CharacterSpriteObject.Add((GameObject)AssetDatabase.LoadAssetAtPath(file, typeof(GameObject)));
+                CharacterLimbStats asset = null;
+                string createdFileName = file.Substring(SpritePathLocation.Length + 1);
+                createdFileName = createdFileName.Remove(createdFileName.Length - 4);
 
-                string s = file.Substring(SpritePathLocation.Length);
-                s = s.Remove(s.Length - 4);
-                Debug.Log(s);
+                string rarity = createdFileName.Remove(4);
+                // createdFileName = createdFileName.Substring(4);
+
+                //     Debug.Log(createdFileName);
 
 
-                //  string name = UnityEditor.AssetDatabase.GenerateUniqueAssetPath;
-                if (!File.Exists(statsFolder + s + ".asset"))
+                if (!File.Exists(statsFolder + createdFileName + ".asset"))
                 {
-                    CharacterLimbStats asset = ScriptableObject.CreateInstance<CharacterLimbStats>();
-                    statsObjects.Add(asset);
-                    AssetDatabase.CreateAsset(asset, (statsFolder + s + ".asset"));
+                    Debug.Log("first rarirtty " + rarity);
+                    asset = ScriptableObject.CreateInstance<CharacterLimbStats>();
 
+                    AssetDatabase.CreateAsset(asset, (statsFolder + createdFileName + ".asset"));
                     AssetDatabase.SaveAssets();
+
+
                 }
+
 
             }
 
+
+        }
+        scriptableObjects.statsObjects.Clear();
+        foreach (string file in System.IO.Directory.GetFiles(statsFolder))
+        {
+            string pathFile = file.Substring(file.Length - 6);
+
+            if (pathFile == ".asset")
+            {
+                CharacterLimbStats stats = (CharacterLimbStats)AssetDatabase.LoadAssetAtPath(file, typeof(CharacterLimbStats));
+                scriptableObjects.statsObjects.Add(stats);
+                string createdFileName = file.Substring(statsFolder.Length );
+                string rarity = createdFileName.Remove(4);
+                Debug.Log("scnd rarirtty " + rarity);
+                UpdateRarity(stats, rarity);
+            }
 
         }
         foreach (string file in System.IO.Directory.GetFiles(faceSpritePathLocation))
@@ -141,11 +187,12 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
                 sprite.Add(sr[j].sprite);
 
-                statsObjects[i].LimbStats[j].LimbName = sr[j].sprite.name;
+                scriptableObjects.statsObjects[i].LimbStats[j].LimbName = sr[j].sprite.name;
 
 
             }
             CharactersList[i].limbSprite = sprite;
+            scriptableObjects.statsObjects[i].sprites = sprite.ToArray();
             //  CharactersList[i].sr = sr;
         }
 
@@ -159,7 +206,8 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
             faces[i].Face = faceSprites[i];
             faces[i].Personality = faceSprites[i].name;
         }
-        StatGiver sg = GetComponent<StatGiver>();
-        sg.EqualizeNumbers();
+        // StatGiver sg = GetComponent<StatGiver>();
+        // sg.EqualizeNumbers();
     }
+#endif
 }

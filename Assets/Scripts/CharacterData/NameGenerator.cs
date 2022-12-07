@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class NameGenerator :MonoBehaviour
+using Pixelplacement;
+public class NameGenerator :Singleton<NameGenerator>
 {
     public string Name;
 
@@ -12,25 +12,12 @@ public class NameGenerator :MonoBehaviour
     string[] namesList;
     string[] adjectivesList;
 
-   
 
-    public string generateRandomName()
+    private void Start()
     {
         GetNames();
-        int i = Random.Range(0, namesList.Length);
-        int j = Random.Range(0, adjectivesList.Length);
-        int k = Random.Range(0, 2);
-
-        if (k == 0)
-        {
-            Name = namesList[i] + " the " + adjectivesList[j];
-        }
-        else if (k == 1)
-        {
-            Name = adjectivesList[j] + " " + namesList[i];
-        }
-        return Name;
     }
+ 
     void GetNames()
     {
         namesList = names._nameData.nameArray;
@@ -43,5 +30,25 @@ public class NameGenerator :MonoBehaviour
         {
             adjectivesList[i] = (char.ToUpper(adjectivesList[i][0]) + adjectivesList[i].Substring(1));
         }
+    }
+
+    public string generateRandomName()
+    {
+      //  GetNames();
+        int i = Random.Range(0, namesList.Length);
+        int j = Random.Range(0, adjectivesList.Length);
+        int k = Random.Range(0, 2);
+
+        if (k == 0)
+        {
+            Name = namesList[i] + " the " + adjectivesList[j];
+        }
+        else if (k == 1)
+        {
+            Name = adjectivesList[j] + " " + namesList[i];
+        }
+      
+        return Name;
+
     }
 }

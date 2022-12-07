@@ -22,11 +22,11 @@ public class JsonSave : MonoBehaviour
     private void OnValidate()
     {
         previousScript = GetComponent<PreviousCharacters>();
-        path = Application.dataPath + Path.AltDirectorySeparatorChar + "savedata.json";
+ 
     }
     void GetData()
     {
-
+        path = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "savedata.json";
         saveData.previousCharacters = previousScript.PreviousCharactersList.ToArray();
         saveData.newestCharacter = previousScript.CurrentCharacter;
     }

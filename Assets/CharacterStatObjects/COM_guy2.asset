@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d06500f226cc254199bc20e606369d6, type: 3}
-  m_Name: guy2
+  m_Name: COM_guy2
   m_EditorClassIdentifier: 
   LimbStats:
   - LimbName: arm copy
