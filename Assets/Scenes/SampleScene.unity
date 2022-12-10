@@ -307,9 +307,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24d597a9284b9e44eabe8fc60695cc9b, type: 2}
   - {fileID: 11400000, guid: 36ac8774dfcaa224b8c2147fd041b255, type: 2}
   - {fileID: 11400000, guid: e03a7b5f8caad75429b95990b3487650, type: 2}
-  UncommonChance: 1
-  RareChance: 1
-  LegendaryChance: 1
+  UncommonChance: 35
+  RareChance: 15
+  LegendaryChance: 5
   CommonObjects: []
   UncommonObjects: []
   RareObjects: []
@@ -2474,6 +2474,7 @@ MonoBehaviour:
     personality: 0
     limbElement: 000000000000000000000000000000000000000000000000
     limbInt: 000000000000000000000000000000000000000000000000
+    limbRarity: 000000000000000000000000000000000000000000000000
 --- !u!114 &1962798996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,6 +2498,7 @@ MonoBehaviour:
       personality: 0
       limbElement: 000000000000000000000000000000000000000000000000
       limbInt: 000000000000000000000000000000000000000000000000
+      limbRarity: 000000000000000000000000000000000000000000000000
 --- !u!1 &1985575264
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,27 +2582,27 @@ MonoBehaviour:
     - {fileID: 2862857041179494317, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
   - Name: LEG_guy
     limbSprite:
-    - {fileID: -3465565950922157988, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
-    - {fileID: 657066279718645023, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
-    - {fileID: 7324984507975950097, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
-    - {fileID: 4928124674225174358, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
-    - {fileID: -4902051160747126218, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
-    - {fileID: 2862857041179494317, guid: 029dee115fa8da149afc7257b454ee6a, type: 3}
+    - {fileID: -2235242240459763600, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+    - {fileID: 657066279718645023, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+    - {fileID: 7324984507975950097, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+    - {fileID: 4928124674225174358, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+    - {fileID: -1749787426992407259, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+    - {fileID: 2862857041179494317, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
   - Name: RAR_guy
     limbSprite:
-    - {fileID: 6642214114180939812, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
-    - {fileID: 657066279718645023, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
-    - {fileID: 7324984507975950097, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
-    - {fileID: 4928124674225174358, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
-    - {fileID: 3850505037678806168, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
-    - {fileID: 2862857041179494317, guid: 97d8e0cf796a89b418a1242c62af2f4f, type: 3}
+    - {fileID: 7171758162176425758, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
+    - {fileID: 657066279718645023, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
+    - {fileID: 7324984507975950097, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
+    - {fileID: 4928124674225174358, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
+    - {fileID: -7467273441399446268, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
+    - {fileID: 2862857041179494317, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
   - Name: UNC_guy
     limbSprite:
-    - {fileID: 5618799201377476470, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+    - {fileID: -1927177275801935604, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
     - {fileID: 657066279718645023, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
     - {fileID: 7324984507975950097, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
     - {fileID: 4928124674225174358, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
-    - {fileID: 3212055711826896974, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+    - {fileID: -4110397574976338932, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
     - {fileID: 2862857041179494317, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
   colors:
   - colorName: 1

@@ -8,11 +8,11 @@ public class ScriptableObjectHolder : Singleton<ScriptableObjectHolder>
    public List<CharacterLimbStats> statsObjects = new List<CharacterLimbStats>();
 
     [Range(1, 100)]
-    public int UncommonChance;
+    public float UncommonChance;
     [Range(1, 100)]
-    public int RareChance;
+    public float RareChance;
     [Range(1, 100)]
-    public int LegendaryChance;
+    public float LegendaryChance;
 
     public List<CharacterLimbStats> CommonObjects = new List<CharacterLimbStats>();
     public List<CharacterLimbStats> UncommonObjects = new List<CharacterLimbStats>();

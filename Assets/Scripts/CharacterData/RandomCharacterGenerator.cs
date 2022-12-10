@@ -78,6 +78,10 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
 
 
         }
+        for (int i = 0; i < currentChar.limbRarity.Length; i++)
+        {
+            toBeSaved.limbRarity[i] = currentChar.limbRarity[i];
+        }
 
         //PreviousCharacters.Instance.setStats(1, toBeSaved.stats);
         Stats tempList = new Stats();
@@ -97,29 +101,61 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
 
     public void LoadPrevious()
     {
-        PreviousCharactersList previousCharacter = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
-        PreviousCharactersList currentChar = PreviousCharacters.Instance.CurrentCharacter;
-        charName = previousCharacter.name;
-        currentChar.personality = previousCharacter.personality;
+        PreviousCharactersList previousCharacter = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 2];
 
-        for (int i = 0; i < currentChar.limbElement.Length; i++)
+        charName = previousCharacter.name;
+        PreviousCharacters.Instance.CurrentCharacter.name = charName;
+
+        for (int i = 0; i < previousCharacter.limbElement.Length; i++)
         {
-            currentChar.limbElement[i] = previousCharacter.limbElement[i];
-            characterParts[i].thatLimbSpriteRenderer.color = ElementColor(currentChar.limbElement[i]);
+            previousCharacter.limbElement[i] = previousCharacter.limbElement[i];
+            characterParts[i].thatLimbSpriteRenderer.color = ElementColor(previousCharacter.limbElement[i]);
         }
-        personality = CharacterSpriteFinder.faces[currentChar.personality].Personality;
-        face.sprite = CharacterSpriteFinder.faces[currentChar.personality].Face;
+    
+        personality = CharacterSpriteFinder.faces[previousCharacter.personality].Personality;
+        face.sprite = CharacterSpriteFinder.faces[previousCharacter.personality].Face;
 
         // PreviousCharacters.Instance.setStats(0, previousCharacter.stats);
         cs.stats = previousCharacter.stats;
-
-
+        PreviousCharacters.Instance.CurrentCharacter.stats = cs.stats;
+        CharacterLimbStats[] characterLimbStats = null;
 
 
         for (int i = 0; i < characterParts.Length; i++)
         {
-            characterParts[i].thatLimbSpriteRenderer.sprite = CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
+            if (previousCharacter.limbRarity[i] == RarityEnum.Common)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.CommonObjects.ToArray();
+                characterParts[i].thatLimbSpriteRenderer.sprite =
+                    characterLimbStats[previousCharacter.limbInt[i]].sprites[i];
+              // CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
+            }
+            if (previousCharacter.limbRarity[i] == RarityEnum.Uncommon)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.UncommonObjects.ToArray();
+                characterParts[i].thatLimbSpriteRenderer.sprite =
+                    characterLimbStats[previousCharacter.limbInt[i]].sprites[i];
+              // CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
+            }
+            if (previousCharacter.limbRarity[i] == RarityEnum.Rare)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.RareObjects.ToArray();
+                characterParts[i].thatLimbSpriteRenderer.sprite =
+                    characterLimbStats[previousCharacter.limbInt[i]].sprites[i];
+              // CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
+            }
+            if (previousCharacter.limbRarity[i] == RarityEnum.Legendary)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.LegendaryObjects.ToArray();
+                characterParts[i].thatLimbSpriteRenderer.sprite =
+                    characterLimbStats[previousCharacter.limbInt[i]].sprites[i];
+              // CharacterSpriteFinder.CharactersList[previousCharacter.limbInt[i]].limbSprite[i];
+            }
+           
         }
+
+        ShowName.Instance.UpdateText();
+        ShowStats.Instance.UpdateStats();
     }
 
     public void Randomize()
@@ -133,28 +169,39 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
         cs.ResetStats();
         for (int i = 0; i < characterParts.Length; i++)
         {
-            CharacterLimbStats[] characterLimbStats=null;
-            float rarityCheck = Random.value * 100;
-            Debug.Log(rarityCheck);
-            if (rarityCheck < ScriptableObjectHolder.Instance.UncommonChance)
-            {
-                characterLimbStats = ScriptableObjectHolder.Instance.UncommonObjects.ToArray();
-            }
-            else if (rarityCheck < ScriptableObjectHolder.Instance.RareChance)
-            {
-                characterLimbStats = ScriptableObjectHolder.Instance.RareObjects.ToArray();
-            }
-            else if (rarityCheck < ScriptableObjectHolder.Instance.LegendaryChance)
+            CharacterLimbStats[] characterLimbStats = null;
+            float rarityCheck = Random.Range(0,101);
+            Debug.Log(rarityCheck); 
+
+
+
+
+
+             if (rarityCheck <= ScriptableObjectHolder.Instance.LegendaryChance)
             {
                 characterLimbStats = ScriptableObjectHolder.Instance.LegendaryObjects.ToArray();
+                currentCharacter.limbRarity[i] = RarityEnum.Legendary;
             }
+            else if (rarityCheck <= ScriptableObjectHolder.Instance.RareChance)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.RareObjects.ToArray();
+                currentCharacter.limbRarity[i] = RarityEnum.Rare;
+            }
+            else if (rarityCheck <= ScriptableObjectHolder.Instance.UncommonChance)
+            {
+                characterLimbStats = ScriptableObjectHolder.Instance.UncommonObjects.ToArray();
+                currentCharacter.limbRarity[i] = RarityEnum.Uncommon;
+            }
+         
+           
             else
             {
                 characterLimbStats = ScriptableObjectHolder.Instance.CommonObjects.ToArray();
+                currentCharacter.limbRarity[i] = RarityEnum.Common;
             }
 
             int j = Random.Range(0, characterLimbStats.Length);
-           
+
             characterParts[i].thatLimbSpriteRenderer.sprite = characterLimbStats[j].sprites[i];
             currentCharacter.limbInt[i] = j;
             int elementcount = (System.Enum.GetValues(typeof(Element)).Length);

@@ -12,6 +12,7 @@ public class PreviousCharactersList
     public int personality;
     public Element[] limbElement = new Element[6];
     public int[] limbInt = new int[6];
+    public RarityEnum[] limbRarity = new RarityEnum[6];
   
 }
 
