@@ -163,7 +163,7 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
     public void LimbSorter()
     {
         CharactersList.Clear();
-
+        faces.Clear();
         for (int i = 0; i < CharacterSpriteObject.Count; i++)
         {
             string text = CharacterSpriteObject[i].name;
@@ -198,10 +198,9 @@ public class CharacterSpriteFinder : Singleton<CharacterSpriteFinder>
 
         for (int i = 0; i < faceSprites.Count; i++)
         {
-            if (faces[i] == null)
-            {
+          
                 faces.Add(new CharacterFaces());
-            }
+            
 
             faces[i].Face = faceSprites[i];
             faces[i].Personality = faceSprites[i].name;

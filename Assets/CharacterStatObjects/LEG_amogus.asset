@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d06500f226cc254199bc20e606369d6, type: 3}
-  m_Name: RAR_guy
+  m_Name: LEG_amogus
   m_EditorClassIdentifier: 
   LimbStats:
   - LimbName: arm copy
@@ -44,11 +44,11 @@ MonoBehaviour:
       agi: 0
       intl: 0
   sprites:
-  - {fileID: 7171758162176425758, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  - {fileID: 657066279718645023, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  - {fileID: 7324984507975950097, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  - {fileID: 4928124674225174358, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  - {fileID: -7467273441399446268, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  - {fileID: 2862857041179494317, guid: 99e6be31436d6084fa5dd879a1fa0d6e, type: 3}
-  FacePosition: 1
-  rarity: 2
+  - {fileID: -8445068749453928654, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  - {fileID: 657066279718645023, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  - {fileID: 7324984507975950097, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  - {fileID: 5658677497570961216, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  - {fileID: 2991838133237559920, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  - {fileID: 5514644867871161766, guid: 514ba88b9ea422348b167f93812010ee, type: 3}
+  FacePosition: 3
+  rarity: 3

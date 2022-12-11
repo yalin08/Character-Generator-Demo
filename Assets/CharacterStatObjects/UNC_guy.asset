@@ -13,35 +13,42 @@ MonoBehaviour:
   m_Name: UNC_guy
   m_EditorClassIdentifier: 
   LimbStats:
-  - LimbName: 
+  - LimbName: arm copy
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: head
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: body
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: leg
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: leg copy
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: arm
     stats:
       str: 0
       agi: 0
       intl: 0
-  sprites: []
-  rarity: 0
+  sprites:
+  - {fileID: -1927177275801935604, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  - {fileID: 657066279718645023, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  - {fileID: 7324984507975950097, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  - {fileID: 4928124674225174358, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  - {fileID: -4110397574976338932, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  - {fileID: 2862857041179494317, guid: 3a3f1c415d3c0834e8b61ef364f7a2c5, type: 3}
+  FacePosition: 2
+  rarity: 1

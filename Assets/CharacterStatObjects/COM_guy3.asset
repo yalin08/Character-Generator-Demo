@@ -43,3 +43,12 @@ MonoBehaviour:
       str: 1
       agi: 1
       intl: 2
+  sprites:
+  - {fileID: 5618799201377476470, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  - {fileID: 657066279718645023, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  - {fileID: 7324984507975950097, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  - {fileID: 4928124674225174358, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  - {fileID: 3212055711826896974, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  - {fileID: 2862857041179494317, guid: 368ddb159f6228447ba3a69f39364dbf, type: 3}
+  FacePosition: 0
+  rarity: 0

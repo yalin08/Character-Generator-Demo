@@ -19,5 +19,6 @@ public class CharacterLimbStats : ScriptableObject
 {
     public LimbsStats[] LimbStats=new LimbsStats[6];
     public Sprite[] sprites;
+    public int FacePosition;
     public RarityEnum rarity;
 }

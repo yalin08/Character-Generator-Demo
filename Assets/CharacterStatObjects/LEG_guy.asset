@@ -13,35 +13,42 @@ MonoBehaviour:
   m_Name: LEG_guy
   m_EditorClassIdentifier: 
   LimbStats:
-  - LimbName: 
+  - LimbName: arm copy
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: head
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: body
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: leg
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: leg copy
     stats:
       str: 0
       agi: 0
       intl: 0
-  - LimbName: 
+  - LimbName: arm
     stats:
       str: 0
       agi: 0
       intl: 0
-  sprites: []
-  rarity: 0
+  sprites:
+  - {fileID: -2235242240459763600, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  - {fileID: 657066279718645023, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  - {fileID: 7324984507975950097, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  - {fileID: 4928124674225174358, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  - {fileID: -1749787426992407259, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  - {fileID: 2862857041179494317, guid: 700aa55629344ab40b79a911d1d733cd, type: 3}
+  FacePosition: 0
+  rarity: 3

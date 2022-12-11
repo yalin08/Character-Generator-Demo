@@ -28,12 +28,12 @@ MonoBehaviour:
       str: 2
       agi: 2
       intl: 1
-  - LimbName: leg copy
+  - LimbName: leg
     stats:
       str: 1
       agi: 1
       intl: 2
-  - LimbName: leg
+  - LimbName: leg copy
     stats:
       str: 1
       agi: 1
@@ -43,3 +43,12 @@ MonoBehaviour:
       str: 2
       agi: 2
       intl: 1
+  sprites:
+  - {fileID: 6642214114180939812, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  - {fileID: 657066279718645023, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  - {fileID: 7324984507975950097, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  - {fileID: 4928124674225174358, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  - {fileID: 3850505037678806168, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  - {fileID: 2862857041179494317, guid: 4a42dd3b0afe3fc4da9f73ee7a0277dc, type: 3}
+  FacePosition: 0
+  rarity: 0

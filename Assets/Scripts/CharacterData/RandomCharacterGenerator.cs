@@ -218,7 +218,10 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
             personality = CharacterSpriteFinder.faces[l].Personality;
             face.sprite = CharacterSpriteFinder.faces[l].Face;
 
-
+            FaceLocations  fl= GetComponentInChildren<FaceLocations>();
+            if(i==1)
+            face.transform.localPosition = fl.faceLocations[characterLimbStats[j].FacePosition].localPosition;
+           // face.transform.localPosition =;
             cs.stats.str += characterLimbStats[j].LimbStats[i].stats.str;
             cs.stats.agi += characterLimbStats[j].LimbStats[i].stats.agi;
             cs.stats.intl += characterLimbStats[j].LimbStats[i].stats.intl;
