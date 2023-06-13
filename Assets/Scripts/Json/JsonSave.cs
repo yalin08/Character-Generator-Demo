@@ -54,16 +54,22 @@ public class JsonSave : MonoBehaviour
     }
     public void LoadData()
     {
+        path = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "savedata.json";
         if (!File.Exists(path))
         {
+            Debug.Log("asd");
             return;
         }
+
+       
         StreamReader reader = new StreamReader(path);
         string json = reader.ReadToEnd();
+        Debug.Log(path);
         Debug.Log(json);
         SaveData data = JsonUtility.FromJson<SaveData>(json);
         saveData = data;
         reader.Close();
         DistrubuteData();
+        RandomCharacterGenerator.Instance.LoadPrevious(1);
     }
 }

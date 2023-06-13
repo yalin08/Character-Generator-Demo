@@ -47,6 +47,7 @@ ScriptedImporter:
     flipbookRows: 0
     flipbookColumns: 0
     ignorePngGamma: 0
+    cookieMode: 0
     filterMode: 0
     aniso: 1
     mipBias: 0
@@ -89,6 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: arm copy
@@ -309,7 +311,8 @@ ScriptedImporter:
     - {x: 16, y: 17}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 72, y: -3}
+    uvTransform: {x: 72, y: 47}
+    spritePosition: {x: 0, y: 50}
   - name: head
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -649,7 +652,8 @@ ScriptedImporter:
     - {x: 27, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -16, y: -51}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 20, y: 55}
   - name: body
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -989,7 +993,8 @@ ScriptedImporter:
     - {x: 27, y: 28}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 37, y: -21}
+    uvTransform: {x: 72, y: 4}
+    spritePosition: {x: 35, y: 25}
   - name: leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1175,7 +1180,8 @@ ScriptedImporter:
     - {x: 13, y: 14}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -31, y: 67}
+    uvTransform: {x: 4, y: 67}
+    spritePosition: {x: 35, y: 0}
   - name: leg copy
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1361,7 +1367,8 @@ ScriptedImporter:
     - {x: 13, y: 14}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -28, y: 67}
+    uvTransform: {x: 27, y: 67}
+    spritePosition: {x: 55, y: 0}
   - name: arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1580,7 +1587,8 @@ ScriptedImporter:
     - {x: 16, y: 17}
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -15, y: 17}
+    uvTransform: {x: 50, y: 67}
+    spritePosition: {x: 65, y: 50}
   characterData:
     bones: []
     parts:

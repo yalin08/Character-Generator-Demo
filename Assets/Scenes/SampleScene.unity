@@ -1163,6 +1163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1268,7 +1269,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.09275001, y: 0.115798905}
   m_AnchorMax: {x: 0.26347917, y: 0.19183798}
-  m_AnchoredPosition: {x: 0.5, y: -0.6920166}
+  m_AnchoredPosition: {x: 0.5, y: -0.6875}
   m_SizeDelta: {x: -0.7039795, y: 12.731995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1473295970
@@ -2644,7 +2645,7 @@ MonoBehaviour:
   _dontDestroyOnLoad: 1
   PreviousCharactersList: []
   CurrentCharacter:
-    name: Burhan Altintop
+    name: 
     stats:
       str: 0
       agi: 0
@@ -2668,7 +2669,7 @@ MonoBehaviour:
   saveData:
     previousCharacters: []
     newestCharacter:
-      name: 
+      name: Burhan Altintop
       stats:
         str: 0
         agi: 0

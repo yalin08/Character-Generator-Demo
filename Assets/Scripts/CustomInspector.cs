@@ -35,7 +35,7 @@ public class CustomInspector2 : Editor
         }
         if (GUILayout.Button("LoadBefore"))
         {
-            rcg.LoadPrevious();
+            rcg.LoadPrevious(2);
         }
 
     }

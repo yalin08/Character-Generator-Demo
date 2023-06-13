@@ -62,8 +62,9 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
     {
         PreviousCharacters.Instance.PreviousCharactersList.Add(new PreviousCharactersList());
         PreviousCharactersList toBeSaved = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 1];
-        PreviousCharactersList currentChar = PreviousCharacters.Instance.CurrentCharacter;
         toBeSaved.name = new string("" + charName);
+        PreviousCharactersList currentChar = PreviousCharacters.Instance.CurrentCharacter;
+
 
         for (int i = 0; i < currentChar.limbElement.Length; i++)
         {
@@ -99,9 +100,9 @@ public class RandomCharacterGenerator : Singleton<RandomCharacterGenerator>
 
     }
 
-    public void LoadPrevious()
+    public void LoadPrevious(int Number)
     {
-        PreviousCharactersList previousCharacter = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - 2];
+        PreviousCharactersList previousCharacter = PreviousCharacters.Instance.PreviousCharactersList[PreviousCharacters.Instance.PreviousCharactersList.Count - Number];
 
         charName = previousCharacter.name;
         PreviousCharacters.Instance.CurrentCharacter.name = charName;
